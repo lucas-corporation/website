@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;900&display=swap');
+
+@font-face {
+	font-family: 'Corvetta';
+	src: local('Corvetta'), url('./font/Corvetta-Black.ttf');
+  }
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: #161616;
+	overflow-x: hidden;
+}
+
+.container {
+	padding:  0 200px;
+}
+
+header {
+	padding: 2px 0;
+}
+
+.logo {
+	visibility: hidden;
+	width:  100px;
+	height: 100px;
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-nav a {
+	font-family: "Nunito";
+	margin-left: 30px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+  	text-transform: uppercase;
+  	text-decoration:  none;
+  	width: 10%;
+  	border-bottom: 2px solid transparent;
+  	transition: .5s;
+  	padding-bottom: 3px;
+}
+.header-nav a:hover {
+  	color: #ffffff;
+  	text-decoration: none;
+  	border-bottom: 2px solid #f4a83b;
+}
+
+section {
+	padding-top: 64px;
+}
+
+.greeting {
+	display:  flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:  center;
+}
+
+.greeting-block {
+	flex: 1;
+	text-transform: uppercase;
+}
+
+h1 {
+	color: #f4a83b;
+	font-size: 48px;
+	line-height: 48px;
+	font-family: 'Nunito';
+}
+h2 {
+	color: #ffffff;
+  	font-size: 24px;
+  	font-weight: 300;
+  	font-family: 'Nunito';
+}
+h3 {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 300;
+	font-family: 'Nunito';
+	margin: 10px;
+}
+
+p {
+	color: #ffffff;
+  	font-size: 32px;
+  	font-weight: 400;
+  	font-family: 'Nunito';
+}
+
+.contacts-text {
+	margin-left: 128px;
+}
+
+.contacts a {
+	display: flex;
+	flex-direction: row;
+	align-items:  center;
+	margin-bottom: 20px;
+
+  	text-decoration:  none;
+  	width: 50%;
+  	border-bottom: 2px solid transparent;
+  	transition: .5s;
+  	padding-bottom: 3px;
+	color: #ffffff;
+  	font-size: 32px;
+  	font-weight: 400;
+  	font-family: 'Nunito';
+}
+
+.contacts a img {
+	margin-right: 10px;
+	width: 100px;
+	height: 100px;
+}
+
+.name-text {
+	color: #ffffff;
+	text-transform: none;
+	line-height: 96px;
+	font-family: 'Corvetta';
+}
+
+.main-lucas {
+	flex: 1;
+}
+
+.gallery-section {
+	padding-top: 32px;
+	display:  flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:  flex-start;
+}
+
+.gallery-card {
+	width: 512px;
+	height: 100%;
+}
+
+.g-img {
+	height: 90%;
+	width: 90%;
+}
+
+.img-description {
+	text-align:inherit;
+	margin-right: 32px;
+}
+
+.contacts {
+	display:  flex;
+	flex-direction: row;
+	align-items:  flex-end;
+}
+
+.contacts-img {
+	height: 400px;
+	width: 400px;
+}
+
+@media (max-width: 1350px) {
+	h1 {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	.main-lucas {
+		width: 20%;
+		height: 20%;
+	}
+
+	.contacts {
+		flex-direction: column-reverse;
+	}
+}
+@media (max-width: 992px) {
+	.container {
+		padding: 0 30px;
+	}
+	.logo {
+		width:  0px;
+		display:  none;
+	}
+	.header-menu {
+		padding-top: 50px;
+		justify-content:  space-around;
+	}
+
+	.header-nav a {
+		font-size:  20px;
+	}
+
+	.header-nav a:hover {
+		border-bottom: 4px solid #f4a83b;
+	}
+
+	h1 {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	h2 p {
+		font-size: 8px;
+		text-align: center;
+	}
+
+	.blog-text {
+		margin: 0 100px;
+	}
+
+	.main-lucas {
+		width: 20%;
+		height: 20%;
+	}
+
+	.gallery-section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header-text {
+		text-align: center;
+	}
+	.contacts {
+		flex-direction: column-reverse;
+	}
+}
+
+@media (max-width:  600px) {
+	.header-nav {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header-nav a {
+		text-align: center;
+		margin-left:  0;
+		margin-bottom: 10px;
+		font-size: 30px;
+		width: 100%;
+  		border-bottom: 4px solid transparent;
+  		transition: .5s;
+  		padding-bottom: 3px;
+	}
+
+	.header-nav a:hover {
+		border-bottom: 5px solid #f4a83b;
+	}
+
+	.greeting {
+		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	h2 p {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.blog-text {
+		margin: 0 0;
+	}
+
+	.main-lucas {
+		height: 100%;
+		width: 100%;
+	}
+
+	.gallery-section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header-text {
+		text-align: center;
+	}
+	.contacts {
+		flex-direction: column-reverse;
+		text-align: center;
+		justify-content: end;
+
+	}
+
+	.contacts p {
+		margin: 0;
+		text-align: justify;
+		align-items: center;
+		font-size: 24px;
+	}
+
+	.contacts a {
+		margin: 0;
+		text-align: start;
+		font-size: 16px;
+		align-items: center;
+	}
+
+	.contacts-text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.gallery-card {
+		display: flex;
+		flex-direction: column;
+		text-align:center;
+		width: 80%;
+	}
+
+	.contacts a img {
+		margin-right: 0;
+	}
+
+	.contacts-text {
+		margin-left: 0;
+	}
+
+	.contact-icon {
+		width: 50px;
+		height: 50px;
+	}
+
+	header {
+		visibility: hidden;
+		height: 0;
+	}
+}
